@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="img/favicon.ico"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>HAREBARE</title>  
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="sp_menu">
+        <div class="container-fluid">
+          <div class="header__left">
+            <div class="header__left__nav">
+              <nav>
+                <ul>
+                  <li class="hover_open">
+                    <a href="" class="header__left__menu__open">
+                      <span>≡</span>
+                    </a>
+                    <ul class="header__left__item">
+                      <li><a href="">ショップ</a></li>
+                      <li><a href="">ゲーム進行</a></li>
+                      <li><a href="">役一覧</a></li>
+                      <li><a href="">記事</a></li>
+                      <li><a href="">店舗一覧</a></li>
+                      <li><a href="">イベント</a></li>
+                      <li><a href="">ヘルプ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>            
+            </div>
+            <div class="header__title">
+              <h1>HAREBARE <i class="bi bi-brightness-high"></i></h1>
+            </div>
+          </div>
+          <div class="header__right">
+            <nav>
+              <ul>
+                <li><i class="bi bi-person-circle"></i></li>
+                <li><i class="bi bi-cart"></i></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="headerBottom">
+          <ul class="headerLink">
+            <a href=""><li>ショップ</li></a>
+            <a href=""><li>ゲーム進行</li></a>
+            <a href=""><li>役一覧</li></a>
+            <a href=""><li>記事</li></a>
+            <a href=""><li>店舗一覧</li></a>
+            <a href=""><li>イベント</li></a>
+            <a href=""><li>ヘルプ</li></a>
+          </ul>
+        </div>
+        <section id="spSearch">
+          <div class="searchCategory"><a href="">商品カテゴリ</a></div>
+          <form action="" class="searchForm">
+            <input type="text" class="cardNameBox" placeholder="商品名を入力してください">
+            <input type="submit" id="leftmenu_search_goods_submit" value="検索">
+          </form>
+        </section>
+      </div>
+
+      <div class="pc_menu">
+        <div class="container-fluid">
+          <div class="header__left">
+            <div class="header__left__nav">
+              <nav>
+                <ul>
+                  <li class="hover_open">
+                    <a href="" class="header__left__menu__open">
+                      <span>≡</span>
+                    </a>
+                    <ul class="header__left__item">
+                      <li><a href="">ショップ</a></li>
+                      <li><a href="">ゲーム進行</a></li>
+                      <li><a href="">役一覧</a></li>
+                      <li><a href="">記事</a></li>
+                      <li><a href="">店舗一覧</a></li>
+                      <li><a href="">イベント</a></li>
+                      <li><a href="">ヘルプ</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>            
+            </div>
+            <div class="header__title">
+              <h1>HAREBARE <i class="bi bi-brightness-high"></i></h1>
+            </div>
+          </div>       
+          <section id="pcSearch">
+            <div class="pc_searchCategory">
+              <select name="" id="all_sale_item" class="card_search_dropdown">
+                <option value="" selected hidden>全商品</option>
+                <option value="">オリジナルカード</option>
+                <option value="">オリジナルチップ</option>
+                <option value="">カジノテーブル</option>
+              </select>   
+            </div>
+            <form action="" class="pc_searchForm">
+              <input type="text" class="pc_cardNameBox" placeholder="商品名を入力してください">
+              <label class="pc_search_btn">
+                <i class="bi bi-search"></i>               
+                <input type="submit" class="deletes">
+              </label>
+            </form>
+          </section>
+          <div class="header__right">
+            <nav>
+              <ul>
+                <li><i class="bi bi-person-circle"></i></li>
+                <li><i class="bi bi-cart"></i></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="headerBottom">
+          <ul class="headerLink">
+            <a href=""><li>ショップ</li></a>
+            <a href=""><li>ゲーム進行</li></a>
+            <a href=""><li>役一覧</li></a>
+            <a href=""><li>記事</li></a>
+            <a href=""><li>店舗一覧</li></a>
+            <a href=""><li>イベント</li></a>
+            <a href=""><li>ヘルプ</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div id="header_target"></div>
+
+    <div class="body_container">
+      <div class="sp_search_carousel">
+        <section class="carousel">
+          <div class="carousel_container">
+            <ul class="carousel_list">
+              <li><img src="img/poker.png" alt=""></li>
+              <li><img src="img/cards.png" alt=""></li>
+              <li><img src="img/chips.png" alt=""></li>
+            </ul>
+            <button id="carousel_prev">&lt;&lt;</button>
+            <button id="carousel_next">&gt;&gt;</button>
+          </div>
+          <nav class="carousel_button">      
+          </nav>
+        </section>
+        <section class="searchs_cards">
+          <div class="card_search">
+            <h2>商品検索</h2>        
+            <input type="text" class="card_search_input" placeholder="商品名を入力してください">        
+          </div>
+          <div class="card_search">
+            <h2>ルール選択</h2>
+            <select name="" id="card" class="card_search_dropdown">
+              <option value="" selected hidden>指定なし</option>
+              <option value="">テキサスホールデム</option>
+              <option value="">ドローポーカー</option>
+              <option value="">ブラックジャック</option>
+            </select>   
+          </div>
+          <div class="card_search_types">
+            <h2>マークの雑学</h2>
+            <div class="card_search_type">
+              <input id="heart" type="checkbox" value="heart_type">
+              <label for="heart" class="check_box">
+                <img src="img/heart.png" alt="" class="card_search_type_styles">
+              </label>
+              <input id="diamond" type="checkbox" value="diamond_type">
+              <label for="diamond" class="check_box">
+                <img src="img/diamond.png" alt="" class=" card_search_type_styles">
+              </label>
+              <input id="club" type="checkbox" value="club_type">
+              <label for="club" class="check_box">
+                <img src="img/club.png" alt="" class="card_search_type_styles">
+              </label>
+              <input id="spade" type="checkbox" value="spade_type">
+              <label for="spade" class="check_box">
+                <img src="img/spade.png" alt="" class="card_search_type_styles">
+              </label>
+            </div>
+            <button type="submit" class="btn search_btn">
+              <i class="bi bi-search"></i>検索
+            </button>
+          </div>
+        </section>
+      </div>
+      <section class="event_tournament">
+        <h2>ポーカー大会の会場案内</h2>
+        <a href="" class="shiny-btn1">
+          <div class="Hokkaido">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>北海道大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Tohoku">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>東北大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Kanto">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>関東大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Tyubu">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>中部大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Kinki">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>近畿大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Tyugoku">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>中国大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Shikoku">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>四国大会</h2>
+            </div>
+          </div>
+        </a>
+        <a href="" class="shiny-btn1">
+          <div class="Kyusyu">
+            <div class="BackGround">
+              <div class="title_event_date">
+                x月y日
+              </div>
+            </div>
+            <div class="event_title">
+              <h2>九州大会</h2>
+            </div>
+          </div>
+        </a>
+      </section>
+    </div>
+    <footer>
+      <div class="sp_menu">
+        <div class="footer_container">
+          <div class="footer_navs">
+            <input type="checkbox" class="footer_nav_tpggle" id="footer_nav_toggle_sitemap">
+            <label for="footer_nav_toggle_sitemap" class="footer_nav_list_title">
+              サイトマップ
+              <span class="footer_nav_list_open">▼</span>
+            </label>
+            <ul id="footer_nav_sitemap_list">
+              <li><a href="">ショップ</a></li>
+              <li><a href="">ゲーム進行</a></li>
+              <li><a href="">役一覧</a></li>
+              <li><a href="">記事</a></li>
+              <li><a href="">店舗一覧</a></li>
+              <li><a href="">イベント</a></li>
+              <li><a href="">ヘルプ</a></li>
+            </ul>
+          </div>
+          <div class="footer_navs">
+            <input type="checkbox" class="footer_nav_tpggle" id="footer_nav_toggle_venue">
+            <label for="footer_nav_toggle_venue" class="footer_nav_list_title">
+              会場情報
+              <span class="footer_nav_list_open">▼</span>
+            </label>
+            <ul id="footer_nav_venue_list">
+              <li><a href="">北海道</a></li>
+              <li><a href="">東北</a></li>
+              <li><a href="">関東</a></li>
+              <li><a href="">中部</a></li>
+              <li><a href="">近畿</a></li>
+              <li><a href="">中国</a></li>
+              <li><a href="">四国</a></li>
+              <li><a href="">九州沖縄</a></li>
+            </ul>
+          </div>
+          <div class="footer_navs">
+            <input type="checkbox" class="footer_nav_tpggle" id="footer_nav_toggle_information">
+            <label for="footer_nav_toggle_information" class="footer_nav_list_title">
+              お得な情報
+              <span class="footer_nav_list_open">▼</span>
+            </label>
+            <ul id="footer_nav_information_list">
+              <li><a href="">晴れ晴れTwitter</a></li>
+              <li><a href="">晴れ晴れChannel</a></li>
+              <li><a href="">晴れ晴れDiscord</a></li>
+            </ul>
+          </div>
+          <div class="footer_title">
+            <h2>HAREBARE <i class="bi bi-brightness-high"></i></h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc_menu">
+        <div class="footer_pc_container">
+          <div class="footer_pc_navs">
+            <div class="footer_pc_nav">
+              <ul>
+                <li>サイトマップ</li>
+                <li><a href="">ショップ</a></li>
+                <li><a href="">ゲーム進行</a></li>
+                <li><a href="">役一覧</a></li>
+                <li><a href="">記事</a></li>
+                <li><a href="">店舗一覧</a></li>
+                <li><a href="">イベント</a></li>
+                <li><a href="">ヘルプ</a></li>
+              </ul>
+            </div>
+            <div class="footer_pc_nav">
+              <ul>
+                <li>会場情報</li>
+                <li><a href="">北海道</a></li>
+                <li><a href="">東北</a></li>
+                <li><a href="">関東</a></li>
+                <li><a href="">中部</a></li>
+                <li><a href="">近畿</a></li>
+                <li><a href="">中国</a></li>
+                <li><a href="">四国</a></li>
+                <li><a href="">九州沖縄</a></li>
+              </ul>
+            </div>
+            <div class="footer_pc_nav">
+              <ul>
+                <li>お得な情報</li>
+                <li><a href="">晴れ晴れTwitter</a></li>
+                <li><a href="">晴れ晴れChannel</a></li>
+                <li><a href="">晴れ晴れDiscord</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_pc_title">
+            <h2>HAREBARE <i class="bi bi-brightness-high"></i></h2>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
